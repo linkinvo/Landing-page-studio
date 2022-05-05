@@ -1,33 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
 
-  .header {
-    max-width: 1202px;
-    padding-right: 120px;
-    padding-left: 15px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #fefefe;
+}
+
+:root {
+  --myColor: #3b3b3b;
+}
+
+.header {
+  /* max-width: 100%; */
+  padding-right: 120px;
+  padding-left: 120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
+
 .nav-item {
-    margin-left: 60px;
+  margin-left: 60px;
 }
 
 .nav-link {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 16px;
-    transition: .2s ease color;
-}
-.nav-link:hover {
-    color: var(--blue);
+  color: var(--myColor);
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s ease color;
 }
 
+.nav-link:hover {
+  color: var(--blue);
+}
+
+.block_screen {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block_one {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.large_text_1_screen {
+  padding: 163px 0 40px 120px;
+}
+
+.small_text_1_screen {
+  padding: 0 0 33px 120px;
+  width: 471px;
+  height: 78px;
+  word-wrap: break-word;
+}
+
+.button {
+  display: flex;
+  margin: 33px 0 0 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  color: #fefefe;
+  position: absolute;
+  width: 215px;
+  height: 65px;
+  left: 121px;
+  top: 340px;
+  font-size: 20px;
+
+  background: #2639ed;
+  border-radius: 60px;
+}
+
+.dot_ornament {
+  margin: 63px 0 0 68px;
+}
+
+.block_two {
+  margin: 47px 0 0 0;
+}
+
+.icon_ellipse1 {
+  position: relative;
+  bottom: 383px;
+  left: 73px;
+  z-index: 100;
+}
+
+.image_1_screen {
+  position: relative;
+  z-index: 200;
+}
+
+.icon_rectangle1 {
+  position: relative;
+  right: 301px;
+  top: 94px;
+  z-index: 3;
+}
